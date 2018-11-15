@@ -1,0 +1,79 @@
+#include <iostream>
+# include <string.h>
+using namespace std;
+
+int main()
+{
+    string p,q;
+    int i,n;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cin>>p>>q;
+        if(p==q)
+        {
+            cout<<"Caso #"<<i+1<<": De novo!"<<endl;
+        }
+        else
+        {
+            if(p=="pedra")
+            {
+                if(q=="lagarto" || q=="tesoura")
+                {
+                    cout<<"Caso #"<<i+1<<": Bazinga!"<<endl;
+                }
+                else
+                {
+                    cout<<"Caso #"<<i+1<<": Raj trapaceou!"<<endl;
+                }
+            }
+            else if(p=="papel")
+            {
+                if(q=="pedra" || q=="Spock")
+                {
+                    cout<<"Caso #"<<i+1<<": Bazinga!"<<endl;
+                }
+                else
+                {
+                    cout<<"Caso #"<<i+1<<": Raj trapaceou!"<<endl;
+                }
+            }
+            else if(p=="tesoura")
+            {
+                if(q=="papel" || q=="lagarto")
+                {
+                    cout<<"Caso #"<<i+1<<": Bazinga!"<<endl;
+                }
+                else
+                {
+                    cout<<"Caso #"<<i+1<<": Raj trapaceou!"<<endl;
+                }
+            }
+            else if(p=="lagarto")
+            {
+                if(q=="papel" || q=="Spock")
+                {
+                    cout<<"Caso #"<<i+1<<": Bazinga!"<<endl;
+                }
+                else
+                {
+                    cout<<"Caso #"<<i+1<<": Raj trapaceou!"<<endl;
+                }
+            }
+            else if(p=="Spock")
+            {
+                if(q=="pedra" || q=="tesoura")
+                {
+                    cout<<"Caso #"<<i+1<<": Bazinga!"<<endl;
+                }
+                else
+                {
+                    cout<<"Caso #"<<i+1<<": Raj trapaceou!"<<endl;
+                }
+            }
+
+
+        }
+    }
+return 0;
+}

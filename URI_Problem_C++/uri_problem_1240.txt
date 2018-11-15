@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string.h>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+    int n;
+    long long p;
+    char a[33],b[33];
+    cin>>n;
+    for(int c=0; c<n ; c++)
+    {
+        p=1;
+        cin>>a>>b;
+
+        long long int i = strtoll (a,0,10);
+        long long int j = strtoll (b,0,10);
+        if(i==j)
+        {
+            cout<<"encaixa"<<endl;
+            //cout<<"if"<<endl;
+
+        }
+        else if(i<j)
+        {
+            cout<<"nao encaixa"<<endl;
+            //cout<<"else if"<<endl;
+        }
+        else
+        {
+        int l=strlen(b);
+        for(int k=0;k<l;k++)
+        {
+            p*=10;
+        }
+       //cout<<"p="<<p<<endl;
+      if(i%p==j)
+      {
+          cout<<"encaixa"<<endl;
+          //cout<<"i%j="<<p%i<<endl;
+      }
+      else
+      {
+          cout<<"nao encaixa"<<endl;
+          //cout<<"i%j="<<p%i<<endl;
+      }
+        }
+    }
+    return 0;
+}

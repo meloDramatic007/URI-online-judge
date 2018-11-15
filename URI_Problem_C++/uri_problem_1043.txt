@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    double a,b,c,p,A;
+    cin>>a>>b>>c;
+    p=a+b+c;
+    A=(a+b)*c/2;
+    if(b+c>a && c+a>b && a+b>c )
+    {
+        cout<<fixed<<setprecision(1)<<"Perimetro = "<<p<<endl;
+    }
+    else
+    {
+        cout<<fixed<<setprecision(1)<<"Area = "<<A<<endl;
+    }
+    return 0;
+}

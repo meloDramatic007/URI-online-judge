@@ -1,0 +1,31 @@
+#include <iostream>
+#include<math.h>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+    float s,z;
+    cin>>s;
+    if(s<=2000)
+    {
+        cout<<"Isento"<<endl;
+    }
+    else if(s<=3000)
+    {
+        z=(s-2000)*0.08;
+        cout<<fixed<<setprecision(2)<<"R$ "<<z<<endl;
+    }
+    else if(s<=4500)
+    {
+        z=((s-2000)-1000)*0.18+1000*0.08;
+        cout<<fixed<<setprecision(2)<<"R$ "<<z<<endl;
+    }
+    else if(s>4500)
+    {
+        z=((s-2000)-2500)*0.28+1500*0.18+1000*0.08;
+        cout<<fixed<<setprecision(2)<<"R$ "<<z<<endl;
+    }
+    return 0;
+}

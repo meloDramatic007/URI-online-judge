@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(void)
+{
+    string line ="a";
+
+	int n;
+	cin>>n;
+	while ((n+1)!=0)
+	{
+
+
+		getline(cin, line);
+
+
+              n--;
+	}
+
+	cout <<"Ciencia da Computacao"<< endl;
+	return 0;
+}
+
+
+

@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,al=0,gaso=0,dies=0;
+    LOOP:
+    while (true)
+    {
+        cin>>x;
+        if(x==1)
+        {
+            al++;
+        }
+        else if(x==2)
+        {
+           gaso++;
+        }
+        else if(x==3)
+        {
+            dies++;
+        }
+        else if(x==4)
+        {
+            cout<<"MUITO OBRIGADO"<<endl;
+            cout<<"Alcool: "<<al<<endl;
+            cout<<"Gasolina: "<<gaso<<endl;
+            cout<<"Diesel: "<<dies<<endl;
+            return 0;
+        }
+        else
+        {
+            goto LOOP;
+        }
+    }
+
+}

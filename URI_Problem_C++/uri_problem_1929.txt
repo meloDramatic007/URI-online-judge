@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,d;
+    cin>>a>>b>>c>>d;
+    if(a+b>c && abs(a-b)<c || a+b>d && abs(a-b)<d)
+    {
+        cout<<"S"<<endl;
+    }
+    else if(a+c>b && abs(a-c)<b || a+c>d && abs(a-c)<d)
+    {
+        cout<<"S"<<endl;
+    }
+    else if(a+d>b && abs(a-d)<b || a+d>c && abs(a-d)<c)
+    {
+        cout<<"S"<<endl;
+    }
+    else if(b+c>a && abs(b-c)<a || b+c>d && abs(b-c)<d)
+    {
+        cout<<"S"<<endl;
+    }
+    else if(b+d>a && abs(b-d)<a || b+d>c && abs(b-d)<c)
+    {
+        cout<<"S"<<endl;
+    }
+    else if(c+d>a && abs(c-d)<a || c+d>b && abs(c-d)<b)
+    {
+        cout<<"S"<<endl;
+    }
+    else
+    {
+        cout<<"N"<<endl;
+    }
+    return 0;
+}

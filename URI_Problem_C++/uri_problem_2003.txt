@@ -1,0 +1,26 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int p,q,k,t,m=0;
+
+    while (scanf("%d:%d",&p,&q)!=EOF)
+    {
+
+    k=p*60+q;
+    t=(k+60)-480;
+    if(t<=0)
+    {
+        cout<<"Atraso maximo: "<<m<<endl;
+    }
+    else
+    {
+
+        cout<<"Atraso maximo: "<<t<<endl;
+    }
+    }
+ return 0;
+}

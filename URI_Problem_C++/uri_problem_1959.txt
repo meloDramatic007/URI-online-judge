@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long int nofsides,lofside;
+    long long int area;
+    cin>>nofsides>>lofside;
+
+    area=nofsides*lofside;
+    cout<<area<<endl;
+
+    return 0;
+}

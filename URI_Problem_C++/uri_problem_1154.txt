@@ -1,0 +1,22 @@
+# include <iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+    int n,sum=0;
+    float nt=0.0;
+    while(cin>>n)
+    {
+        if(n<0)
+            break;
+
+            sum=sum+n;
+            nt=nt+1.0;
+            }
+
+
+    cout<<fixed<<setprecision(2)<<(sum/nt)<<endl;
+    return 0;
+}

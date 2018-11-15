@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,x;
+    while(true)
+    {
+        cin>>x;
+        if(x==0)
+        {
+            return 0;
+        }
+        else
+            {
+                for(i=1;i<=x-1;i++)
+                {
+                    cout<<i<<" ";
+
+
+                }
+                cout<<x;
+                cout<<endl;
+            }
+    }
+    return 0;
+}

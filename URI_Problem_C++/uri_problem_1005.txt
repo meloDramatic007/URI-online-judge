@@ -1,0 +1,13 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+float a,b,MEDIA;
+cin>>a;
+cin>>b;
+MEDIA=((a*3.5)+(b*7.5))/(3.5+7.5);
+cout<<std::fixed<<std::setprecision(5)<<"MEDIA = "<<MEDIA<<endl;
+return 0;
+}

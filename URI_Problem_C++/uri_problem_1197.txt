@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    while(cin>>a>>b)
+    {
+        int result=a*b;
+        result=2*result;
+        cout<<result<<endl;
+
+    }
+    return 0;
+}

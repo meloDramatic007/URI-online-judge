@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    int id,highest_id=0;
+    double numbers;
+    double maxi;
+    cin>>n;
+    while(n--)
+    {
+        cin>>id>>numbers;
+        if(numbers>maxi)
+        {
+            maxi=numbers;
+            highest_id=id;
+        }
+    }
+    if(maxi>=8)
+    {
+        cout<<highest_id<<endl;
+    }
+    else
+    {
+        cout<<"Minimum note not reached"<<endl;
+    }
+    return 0;
+}

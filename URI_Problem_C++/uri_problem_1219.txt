@@ -1,0 +1,45 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+
+using namespace std;
+
+double areaOFt(double a,double b,double c)
+{
+    double area,perimeter;
+    perimeter=(a+b+c)/2;
+    area=sqrt(perimeter*(perimeter-a)*(perimeter-b)*(perimeter-c));
+    return area;
+
+}
+double areaOFbc(double a,double b,double c)
+{
+    double radious,area;
+    radious=(a*b*c)/(sqrt((a+b+c)*(b+c-a)*(c+a-b)*(a+b-c)));
+    area=M_PI*radious*radious;
+    return area;
+}
+double areaOFsc(double x,double a,double b,double c)
+{
+    double perimeter;
+    double radious;
+    double area;
+    perimeter= a+b+c;
+    radious=(2*x)/perimeter;
+    area=M_PI*radious*radious;
+    return area;
+}
+int main()
+
+{
+    double areaT,areaBC,areaSC;
+    double side1,side2,side3;
+    while (cin>>side1>>side2>>side3)
+    {
+    areaT=areaOFt(side1,side2,side3);
+    areaBC=areaOFbc(side1,side2,side3);
+    areaSC=areaOFsc(areaT,side1,side2,side3);
+    cout<<fixed<<setprecision(4)<<areaBC-areaT<<" "<<areaT-areaSC<<" "<<areaSC<<endl;
+    }
+    return 0;
+}

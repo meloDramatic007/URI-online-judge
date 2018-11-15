@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+    int number1,number2;
+    int reminder1,reminder2;
+    int sum,carry;
+    while(cin>>number1>>number2)
+    {
+        carry=0,sum=0;
+        if(number1==0 && number2==0)
+        {
+            return 0;
+        }
+        else
+        {
+            while(number1>=10 || number2 >=10)
+            {
+
+                reminder1=number1%10;
+                reminder2=number2%10;
+                sum+=reminder1+reminder2;
+                if(sum>=10)
+                {
+                    carry++;
+                    sum=1;
+                }
+                else
+                {
+                    sum=0;
+                }
+
+                number1=number1/10;
+                number2=number2/10;
+
+                }
+                sum+=number1+number2;
+                if(sum>=10)
+                {
+                    carry++;
+                }
+                if(carry==0)
+                {
+                    cout<<"No carry operation."<<endl;
+                }
+                else if(carry==1)
+                {
+                    cout<<"1 carry operation."<<endl;
+                }
+                else
+                {
+                    cout<<carry<<" carry operations."<<endl;
+                }
+        }
+    }
+}

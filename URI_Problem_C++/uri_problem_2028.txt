@@ -1,0 +1,47 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int n,cases=1,number ;
+    while(scanf("%d",&n)!=EOF)
+    {
+
+        number=(n*(n+1)/2)+1;
+        if(n==0)
+        {
+           cout<<"Caso "<<cases<<": "<<number<<" "<<"numero"<<endl;
+
+        cout<<"0"<<endl;
+        cout<<endl;
+        }
+        else
+        {
+
+
+     cout<<"Caso "<<cases<<": "<<number<<" "<<"numeros"<<endl;
+     cout<<"0";
+    for(int i=0;i<=n;i++)
+    {
+
+        for(int k=0;k<i;k++)
+        {
+
+            cout<<" "<<i;
+
+
+       }
+
+    }
+cout<<endl;
+cout<<endl;
+    }
+
+
+    cases++;
+    }
+
+    return 0;
+}

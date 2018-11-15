@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,j,p,n,sum;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        cin>>p;
+        sum=0;
+        for(j=1;j<=p-1;j++)
+        {
+            if(p%j==0)
+            {
+                sum=sum+j;
+            }
+        }
+    if(sum==p)
+    {
+        cout<<p<<" eh perfeito"<<endl;
+    }
+    else
+    {
+       cout<<p<<" nao eh perfeito"<<endl;
+    }
+    }
+return 0;
+}

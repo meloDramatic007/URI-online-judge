@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int m,n;
+    while(true)
+    {
+        cin>>m>>n;
+        if(m==n)
+        {
+            return 0;
+        }
+        else if(m>n)
+        {
+            cout<<"Decrescente"<<endl;
+        }
+        else if(m<n)
+        {
+            cout<<"Crescente"<<endl;
+        }
+    }
+}

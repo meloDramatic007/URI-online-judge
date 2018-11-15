@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,n,q;
+    string fname,sname,ft,st;
+    int fnumber,snumber;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cin>>fname>>ft>>sname>>st;
+        cin>>fnumber>>snumber;
+        q=fnumber+snumber;
+        if(ft=="PAR" && st=="IMPAR" && q%2==0)
+        {
+            cout<<fname<<endl;
+        }
+        else if(ft=="PAR" && st=="IMPAR" && q%2 !=0)
+        {
+            cout<<sname<<endl;
+        }
+        else if(ft=="IMPAR" && st=="PAR" && q%2==0)
+        {
+            cout<<sname<<endl;
+        }
+        else
+        {
+            cout<<fname<<endl;
+        }
+    }
+    return 0;
+}

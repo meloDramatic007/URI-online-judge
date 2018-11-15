@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string>
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+    int fib[1500];
+    fib[0]=0;
+    fib[1]=1;
+    for(int i=2; i<1500; i++)fib[i]=(fib[i-1] + fib[i-2])%1000;
+    int t;
+    cin>>t;
+    char str[20000];
+    while(t--)
+    {
+        scanf("%s",str);
+        int number=0,cont=1;
+        for(int i=strlen(str)-1; i>=0; i--)
+        {
+            number=(number+((str[i]-48)*cont%1500))%1500;
+            cont*=2;
+            cont=cont%1500;
+        }
+        if(fib[number]<10)cout<<"00";
+        if(fib[number]<100&&fib[number%1500]>=10)cout<<"0";
+        cout<<fib[number%1500]<<endl;
+    }
+    return 0;
+}

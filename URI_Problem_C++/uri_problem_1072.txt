@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,n,p,sum=0,hum=0;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        cin>>p;
+        if(p>=10 && p<=20)
+        {
+            sum+=1;
+
+        }
+
+
+    else
+    {
+        hum+=1;
+
+    }
+    }
+     cout<<sum<<" in"<<endl;
+     cout<<hum<<" out"<<endl;
+
+    return 0;
+}

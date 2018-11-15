@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int p,q,t=0;
+    cin>>p;
+    for(int i=0;i<5;i++)
+    {
+        cin>>q;
+        if(q==p)
+        {
+            t++;
+        }
+    }
+    cout<<t<<endl;
+    return 0;
+}

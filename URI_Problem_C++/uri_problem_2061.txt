@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main()
+{
+    int initial,action,a,b,t=0,m=0;
+    string p;
+    cin>>initial>>action;
+    for(int i=0;i<action;i++)
+    {
+        cin>>p;
+        if(p=="fechou")
+        {
+            t++;
+        }
+        else
+        {
+            m++;
+        }
+    }
+       a=t*2-t;
+       b=a-m;
+       cout<<initial+b<<endl;
+    return 0;
+}

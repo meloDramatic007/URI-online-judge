@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+# include <iomanip>
+
+using namespace std;
+
+int main()
+{   int i,d;
+    double n,c;
+    cin>>n;
+    c=n;
+    d=1;
+    for(i=0;i<100;i++)
+    {
+
+        cout<<"N["<<i<<"] = "<<fixed<<setprecision(4)<<c<<endl;
+
+        c=n/pow(2,d);
+        d++;
+    }
+
+    return 0;
+}

@@ -1,0 +1,50 @@
+# include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int j,k,par[5],impar[5],a,i=0,p=0;
+
+    for( j=0;j<15;j++)
+    {
+        cin>>a;
+        if(a%2==0)
+        {
+            par[i]=a;
+            i++;
+        }
+        else
+            {
+                impar[p]=a;
+               p++;
+            }
+
+    if(i==5)
+    {
+        for(k=0;k<5;k++)
+        {
+            cout<<"par["<<k<<"] = "<<par[k]<<endl;
+        }
+    i=0;
+    }
+
+    if(p==5)
+    {
+        for(k=0;k<5;k++)
+        {
+            cout<<"impar["<<k<<"] = "<<impar[k]<<endl;
+        }
+     p=0;
+    }
+    }
+    for(k=0;k<p;k++)
+    {
+        cout<<"impar["<<k<<"] = "<<impar[k]<<endl;
+    }
+    for(k=0;k<i;k++)
+    {
+        cout<<"par["<<k<<"] = "<<par[k]<<endl;
+    }
+return 0;
+}

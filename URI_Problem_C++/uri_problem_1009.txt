@@ -1,0 +1,16 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    char x[10];
+   double a,b,c,TOTAL;
+   cin>>x;
+   cin>>a;
+   cin>>b;
+   c=(15*b)/100;
+   TOTAL=a+c;
+   cout<<std::fixed<<std::setprecision(2)<<"TOTAL = R$ "<<TOTAL<<endl;
+   return 0;
+}

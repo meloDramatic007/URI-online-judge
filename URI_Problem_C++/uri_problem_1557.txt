@@ -1,0 +1,60 @@
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+int n,i,j;
+
+while(cin>>n && n!=0)
+{
+int m[n][n];
+int first=0,q=0,p,s=0,c=2,t=0,f;
+int cont=0;
+for(i=0;i<n;i++)
+{
+    for(j=first;j<n;j++)
+    {
+        p=pow(2,q);
+        m[first][j]=p;
+        m[j][first]=p;
+        q++;
+        if(p>pow(2,n-2+s))
+        {
+            q=c;
+            s++;
+            c+=2;
+
+        }
+    }
+    first++;
+}
+for(i=0;i<n;i++)
+{
+    f=pow(2,t);
+    t+=2;
+}
+while(f!=0)
+{
+    f/=10;
+    cont++;
+}
+
+
+for(i=0;i<n;i++)
+{
+for(j=0;j<n-1;j++)
+{
+cout<<right<<setw(cont)<<setfill(' ')<<m[i][j]<<" ";
+}
+cout<<right<<setw(cont)<<setfill(' ')<<m[i][j];
+cout<<endl;
+}
+cout<<endl;
+
+}
+
+return 0;
+}

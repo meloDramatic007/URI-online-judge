@@ -1,0 +1,95 @@
+import java.io.IOException;
+import java.util.*;
+import java.lang.*;
+
+ 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        
+         
+         String str1;
+         String str2;
+         int LastInd;
+         
+         Scanner input=new Scanner(System.in);
+            
+         int Case=0;
+        while(input.hasNext())
+        {
+            
+             str1=input.nextLine();
+             str2=input.nextLine();
+            
+             
+         int str1Length=str1.length();
+         int str2Length=str2.length();  
+         
+         char array1[]=new char[str2Length];
+         
+          
+        int pop=str2Length-str1Length+1;
+        int tt=0;
+        int pp=0;
+        int yy=0;
+        int nos=0;
+             
+        while(pop!=0)
+        {
+            int count=0;
+        for(int k=tt;k<str1Length+pp;k++)
+        {
+            
+            array1[k]=str2.charAt(k);
+        }
+        for(int l=tt;l<str1Length+pp;l++)
+        {   
+            if(array1[l]==str1.charAt(l-yy))
+            {
+                count++;
+            }
+            
+             
+            
+        }
+           
+            
+            
+        if(count==str1Length)
+        {
+            nos++;
+            
+        }
+            
+        tt++;
+        pp++;
+        pop--;
+        yy++;
+       
+            
+       
+    }
+            Case++;
+            System.out.println("Caso #"+Case+":");
+            
+            if(nos==0)
+            {
+                
+                System.out.println("Nao existe subsequencia");
+                
+            }
+            else
+            {
+            LastInd=str2.lastIndexOf(str1)+1;
+            
+            System.out.println("Qtd.Subsequencias: "+nos);
+            System.out.println("Pos: "+LastInd);
+                
+            }
+            System.out.println(); 
+        }
+    }
+}
+

@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int d[]={100,50,20,10,5,2,1};
+  int n,p,x,q,y,r,z,s,m,t,k,u,l,v;
+  cin>>n;
+  p=n/100;
+  x=n%100;
+  q=x/50;
+  y=x%50;
+  r=y/20;
+  z=y%20;
+  s=z/10;
+  m=z%10;
+  t=m/5;
+  k=m%5;
+  u=k/2;
+  l=k%2;
+  v=l/1;
+  cout<<n<<endl;
+  cout<<p<<" nota(s) de R$ 100,00"<<endl;
+  cout<<q<<" nota(s) de R$ 50,00"<<endl;
+  cout<<r<<" nota(s) de R$ 20,00"<<endl;
+  cout<<s<<" nota(s) de R$ 10,00"<<endl;
+  cout<<t<<" nota(s) de R$ 5,00"<<endl;
+  cout<<u<<" nota(s) de R$ 2,00"<<endl;
+  cout<<v<<" nota(s) de R$ 1,00"<<endl;
+  return 0;
+}

@@ -1,0 +1,53 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main()
+{
+   string a="caw caw";
+   string reye="*--",leye="--*",lleye="-**",rleye="*-*",rreye="**-",alleye="***";//"---"=0 so i didnt add this to the condition
+    int tmp=0,sum=0;
+    while(tmp<3)
+    {
+        string p;
+        getline(cin,p);
+        if(p==a)
+        {
+            cout<<sum<<endl;
+            tmp++;
+            sum=0;
+        }
+        else if(p==reye)
+        {
+            sum=sum+4;
+        }
+        else if(p==leye)
+        {
+            sum=sum+1;
+        }
+        else if(p==lleye)
+        {
+            sum=sum+3;
+        }
+        else if(p==rleye)
+        {
+            sum=sum+5;
+        }
+        else if(p==rreye)
+        {
+            sum=sum+6;
+        }
+        else if(p==alleye)
+        {
+            sum=sum+7;
+        }
+        else
+        {
+            sum=sum+2;
+        }
+    }
+
+   return 0;
+
+}

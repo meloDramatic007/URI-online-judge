@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+long int p1,p2;
+int i,t,n,bal=0;
+double g1,g2;
+cin>>n;
+
+for(i=1;i<=n;i++)
+{
+cin>>p1>>p2>>g1>>g2;
+t=0;bal=0;
+while(p1<=p2)
+{
+p1+=p1*(g1/100);
+p2+=p2*(g2/100);
+t++;
+if(t>100)
+{
+    bal=1;
+    break;
+}
+}
+if(bal==0)
+{
+cout<<t<<" anos."<<endl;
+}
+else
+{
+cout<<"Mais de 1 seculo."<<endl;
+}
+}
+return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long int n,q,p;
+    cin>>n;
+    p=n-3;
+    q=n*p/2;
+    cout<<q<<endl;
+    return 0;
+}

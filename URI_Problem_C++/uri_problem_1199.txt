@@ -1,0 +1,82 @@
+#include <iostream>
+#include <stdlib.h>
+
+
+using namespace std;
+void tohex(int x)
+{
+    int p,k,t=1;
+    int a[100];
+    if(x<10)
+    {
+        cout<<"0x"<<x<<endl;
+    }
+    else
+    {
+        cout<<"0x";
+        while(x!=0)
+        {
+            p=x%16;
+            x=x/16;
+            a[t]=p;
+            t++;
+            k=t;
+        }
+        for(int i=k-1; i>0; i--)
+        {
+            if(a[i]==10)
+            {
+                cout<<"A";
+            }
+            else if(a[i]==11)
+            {
+                cout<<"B";
+            }
+            else if(a[i]==12)
+            {
+                cout<<"C";
+            }
+            else if(a[i]==13)
+            {
+                cout<<"D";
+            }
+            else if(a[i]==14)
+            {
+                cout<<"E";
+            }
+            else if(a[i]==15)
+            {
+                cout<<"F";
+            }
+            else
+            {
+                cout<<a[i];
+            }
+        }
+        cout<<endl;
+    }
+}
+
+int main()
+{
+    char number[33];
+    int x;
+    while(cin>>number)
+    {
+        if(number[0]=='-')
+        {
+            return 0;
+        }
+        else if(number[1]=='x')
+        {
+            x=strtol(number,0,16);
+            cout<<x<<endl;
+        }
+        else
+        {
+            x=strtol(number,0,10);
+            tohex(x);
+        }
+    }
+
+}

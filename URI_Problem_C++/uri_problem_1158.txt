@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,p,q,sum;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        cin>>p>>q;
+        sum=0;
+        if(p==1 && q==0)
+        {
+            cout<<"1"<<endl;
+        }
+        else
+            {
+
+
+     for(int j=1;j<=2*q;j++)
+        {
+
+
+            if(p==0 || p%2 !=0)
+                sum=sum+p;
+                p++;
+
+         }
+         cout<<sum<<endl;
+         }
+         }
+
+    return 0;
+
+
+}

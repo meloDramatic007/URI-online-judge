@@ -1,0 +1,33 @@
+#include <iostream>
+
+
+using namespace std;
+long long int factorial(int a,int b)
+{
+    long long int facto1=1;
+    long long int facto2=1;
+    while(a>=1)
+    {
+        facto1=facto1*a;
+        a--;
+    }
+    while(b>=1)
+    {
+        facto2=facto2*b;
+        b--;
+    }
+    return facto1+facto2;
+}
+ int main()
+{
+    int a,b;
+    long long int sum=0;
+    while(cin>>a>>b)
+    {
+     sum=factorial(a,b);
+     cout<<sum<<endl;
+
+    }
+
+return 0;
+}

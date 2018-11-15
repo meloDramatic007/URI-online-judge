@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    string p,q;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        cin>>p>>q;
+        if(p=="papel" && q=="papel")
+        {
+            cout<<"Ambos venceram"<<endl;
+        }
+        else if(p=="pedra" && q=="pedra")
+        {
+            cout<<"Sem ganhador"<<endl;
+        }
+        else if(p=="ataque" && q=="ataque")
+        {
+            cout<<"Aniquilacao mutua"<<endl;
+        }
+        else
+        {
+            if(p=="ataque")
+            {
+                if(q=="pedra" || q=="papel")
+                {
+                    cout<<"Jogador 1 venceu"<<endl;
+                }
+            }
+            else if(p=="pedra" && q=="papel")
+            {
+                cout<<"Jogador 1 venceu"<<endl;
+            }
+            else
+            {
+                cout<<"Jogador 2 venceu"<<endl;
+            }
+
+        }
+    }
+    return 0;
+}

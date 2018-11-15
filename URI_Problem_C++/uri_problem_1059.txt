@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int p;
+    for(p=1;p<=50;p++)
+    {
+        cout<<""<<p+p<<endl;
+    }
+    return 0;
+}

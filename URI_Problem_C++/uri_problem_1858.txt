@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,p;
+    int i,min,minIndex=0;
+    cin>>n;
+    int a[n];
+    min=30;
+    for(i=0;i<n;i++)
+    {
+        cin>>p;
+        a[i]=p;
+    }
+    for(i=0;i<n;i++)
+    {
+        if(min>a[i])
+        {
+            min=a[i];
+            minIndex=i;
+        }
+
+
+    }     minIndex+=1;
+          cout<<minIndex<<endl;
+          return 0;
+}

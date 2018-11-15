@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int D,VG;
+    double VF,hyp,Tf,Tg;
+    while(cin>>D>>VF>>VG)
+    {
+         hyp=sqrt(12*12+D*D);
+
+         Tf=12/VF;
+         Tg=hyp/VG;
+
+
+         if(Tf>=Tg)
+         {
+             cout<<"S"<<endl;
+         }
+         else
+         {
+             cout<<"N"<<endl;
+         }
+    }
+    return 0;
+}

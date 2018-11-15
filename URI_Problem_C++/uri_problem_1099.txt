@@ -1,0 +1,37 @@
+# include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int main ()
+{
+    int n,i,j,x,y;
+    cin>>n;
+    for(j=1;j<=n;j++)
+    {
+    scanf("%d %d",&x,&y);
+    if(x<y)
+    {   int sum=0;
+        for(i=x+1;i<y;i++)
+        {
+            if(i%2 != 0)
+
+                sum+=i;
+        }
+
+        cout<<sum<<endl;
+        }
+    else
+    {     int sum=0;
+        for(i=y+1;i<x;i++)
+        {
+            if(i%2 != 0)
+
+                sum+=i;
+
+            }
+        cout<<sum<<endl;
+    }
+
+    }
+    return 0;
+}

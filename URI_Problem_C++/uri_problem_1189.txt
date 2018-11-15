@@ -1,0 +1,47 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    double m[12][12];
+    int i,j;
+    int r=1,s=0,u=1;
+    char t;
+    double sum=0;
+    cin>>t;
+    for(i=0;i<12;i++)
+    {
+        for(j=0;j<12;j++)
+        {
+            cin>>m[i][j];
+        }
+    }
+    for(i=1;i<11;i++)
+    {
+        for(j=0;j<r;j++)
+        {
+            sum=sum+m[i][j];
+        }
+    r++;
+    if(r>5)
+    {
+        r=5;
+        s++;
+    }
+    if(s>1)
+    {
+        r=5-u;
+        u++;
+    }
+
+       }
+
+    if(t=='M')
+    {
+        sum/=30;
+    }
+    cout<<fixed<<setprecision(1)<<sum<<endl;
+    return 0;
+}

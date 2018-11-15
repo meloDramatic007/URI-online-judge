@@ -1,0 +1,111 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+
+
+
+
+
+
+import java.io.IOException;
+
+public class Main {
+
+    
+    public static void main(String[] args) throws IOException
+    {
+        int month,days;
+        int totalDays=0;
+        
+        Scanner input=new Scanner(System.in);
+        
+        while(input.hasNext())
+        {
+                month=input.nextInt();
+                days=input.nextInt();
+                
+                switch(month)
+                {
+                   case 1:
+                   {
+                       totalDays=days;
+                       break;
+                   }
+                   case 2:
+                   {
+                     totalDays=31+days;
+                    break;
+                   }
+                   case 3:
+                   {
+                     totalDays=60+days;
+                     break;
+                   }
+                   case 4:
+                   {
+                      totalDays=91+days;
+                      break;
+                   }
+                   case 5:
+                   {
+                      totalDays=121+days;
+                      break;
+                   }
+                   case 6:
+                   {
+                     totalDays=152+days;
+                     break;
+                   }
+                   case 7:
+                   {
+                     totalDays=182+days;
+                     break;
+                   }
+                   case 8:
+                   {
+                     totalDays=213+days;
+                     break;
+                   }
+                   case 9:
+                   {
+                     totalDays=244+days;
+                     break;
+                   }
+                   case 10:
+                   {
+                     totalDays=274+days;
+                     break;
+                   }
+                   case 11:
+                   {
+                     totalDays=305+days;
+                     break;
+                   }
+                   case 12:
+                   {
+                     totalDays=335+days;
+                     break;
+                   }
+             }
+                if(totalDays==360)
+                {
+                    System.out.println("E natal!");
+                }
+                else if(totalDays==359)
+                        {
+                            System.out.println("E vespera de natal!");
+                        }
+                else if(totalDays>360)
+                {
+                    System.out.println("Ja passou!");
+                }
+                else
+                {
+                    System.out.println("Faltam "+(360-totalDays)+" dias para o natal!");
+                }
+                
+        }
+    }
+    
+}

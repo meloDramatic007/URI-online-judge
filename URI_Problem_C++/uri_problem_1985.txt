@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    int n,p,q;
+    float sum=0;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+    cin>>p>>q;
+    if(p==1001)
+    {
+        sum=sum+(1.50*q);
+    }
+    else if(p==1002)
+    {
+        sum=sum+(2.50*q);
+    }
+    else if(p==1003)
+    {
+       sum=sum+(3.50*q);
+    }
+    else if(p==1004)
+    {
+        sum=sum+(4.50*q);
+    }
+    else if(p==1005)
+    {
+        sum=sum+(5.50*q);
+    }
+    else{break;}
+    }
+    cout<<fixed<<setprecision(2)<<sum<<endl;
+    return 0;
+}

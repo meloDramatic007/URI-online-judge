@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int h,q,m,s,n;
+cin>>n;
+h=n/3600;
+q=n%3600;
+m=q/60;
+s=q%60;
+cout<<h<<":"<<m<<":"<<s<<endl;
+return 0;
+}

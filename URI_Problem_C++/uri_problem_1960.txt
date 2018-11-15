@@ -1,0 +1,140 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,p,q,r,s,t;
+    char *shotok[]={"C","CC","CCC","CD","D","DC","DCC","DCCC","CM"};
+    char *doshok[]={"X","XX","XXX","XL","L","LX","LXX","LXXX","XC"};
+    char *ekok []={"I","II","III","IV","V","VI","VII","VIII","IX"};
+
+    while(cin>>n && n!=0)
+    {
+    p=n/100;
+    q=n%100;
+    switch(p)
+    {
+    case 1:
+        {
+            cout<<shotok[0]; break;
+        }
+    case 2:
+        {
+            cout<<shotok[1]; break;
+        }
+    case 3:
+        {
+            cout<<shotok[2]; break;
+        }
+    case 4:
+        {
+            cout<<shotok[3]; break;
+        }
+    case 5:
+        {
+            cout<<shotok[4]; break;
+        }
+    case 6:
+        {
+            cout<<shotok[5]; break;
+        }
+    case 7:
+        {
+            cout<<shotok[6]; break;
+        }
+    case 8:
+        {
+            cout<<shotok[7]; break;
+        }
+    case 9:
+        {
+            cout<<shotok[8]; break;
+        }
+    }
+       r=q/10;
+       s=q%10;
+       switch(r)
+    {
+    case 1:
+        {
+            cout<<doshok[0]; break;
+        }
+    case 2:
+        {
+            cout<<doshok[1]; break;
+        }
+    case 3:
+        {
+            cout<<doshok[2]; break;
+        }
+    case 4:
+        {
+            cout<<doshok[3]; break;
+        }
+    case 5:
+        {
+            cout<<doshok[4]; break;
+        }
+    case 6:
+        {
+            cout<<doshok[5]; break;
+        }
+    case 7:
+        {
+            cout<<doshok[6]; break;
+        }
+    case 8:
+        {
+            cout<<doshok[7]; break;
+        }
+    case 9:
+        {
+            cout<<doshok[8]; break;
+        }
+    }
+
+     t=s/1;
+      switch(t)
+    {
+    case 1:
+        {
+            cout<<ekok[0]; break;
+        }
+    case 2:
+        {
+            cout<<ekok[1]; break;
+        }
+    case 3:
+        {
+            cout<<ekok[2]; break;
+        }
+    case 4:
+        {
+            cout<<ekok[3]; break;
+        }
+    case 5:
+        {
+            cout<<ekok[4]; break;
+        }
+    case 6:
+        {
+            cout<<ekok[5]; break;
+        }
+    case 7:
+        {
+            cout<<ekok[6]; break;
+        }
+    case 8:
+        {
+            cout<<ekok[7]; break;
+        }
+    case 9:
+        {
+            cout<<ekok[8]; break;
+        }
+    }
+    cout<<endl;
+    }
+    return 0;
+}

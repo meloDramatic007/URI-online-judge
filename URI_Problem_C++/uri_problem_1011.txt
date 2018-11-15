@@ -1,0 +1,14 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    int R;
+    double VOLUME;
+    cin>>R;
+    VOLUME=(4.0/3)*3.14159*R*R*R;
+    cout<<fixed<<setprecision(3)<<"VOLUME = "<<VOLUME<<endl;
+
+    return 0;
+}

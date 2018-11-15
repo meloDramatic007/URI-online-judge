@@ -1,0 +1,57 @@
+#include <iostream>
+#include <iomanip>>
+
+using namespace std;
+
+int main()
+{
+    double x,y,z;
+    cin>>x;
+    if(x>0 && x<=400)
+    {
+        y=x*(15.00/100);
+        z=x+y;
+        cout<<fixed<<setprecision(2)<<"Novo salario: "<<z<<endl;
+    cout<<fixed<<setprecision(2)<<"Reajuste ganho: "<<y<<endl;
+    cout<<"Em percentual: 15 %"<<endl;
+
+    }
+    else if(x>=400.01 && x<=800)
+    {
+        y=x*(12.00/100);
+        z=x+y;
+        cout<<fixed<<setprecision(2)<<"Novo salario: "<<z<<endl;
+    cout<<fixed<<setprecision(2)<<"Reajuste ganho: "<<y<<endl;
+    cout<<"Em percentual: 12 %"<<endl;
+
+    }
+    else if(x>=800.01 && x<=1200)
+    {
+        y=x*(10.00/100);
+        z=x+y;
+        cout<<fixed<<setprecision(2)<<"Novo salario: "<<z<<endl;
+    cout<<fixed<<setprecision(2)<<"Reajuste ganho: "<<y<<endl;
+    cout<<"Em percentual: 10 %"<<endl;
+
+    }
+    else if(x>=1200.01 && x<=2000)
+    {
+        y=x*(7.00/100);
+        z=x+y;
+        cout<<fixed<<setprecision(2)<<"Novo salario: "<<z<<endl;
+    cout<<fixed<<setprecision(2)<<"Reajuste ganho: "<<y<<endl;
+    cout<<"Em percentual: 7 %"<<endl;
+
+    }
+   else if(x>2000)
+    {
+        y=x*(4.00/100);
+        z=x+y;
+        cout<<fixed<<setprecision(2)<<"Novo salario: "<<z<<endl;
+    cout<<fixed<<setprecision(2)<<"Reajuste ganho: "<<y<<endl;
+    cout<<"Em percentual: 4 %"<<endl;
+
+    }
+
+    return 0;
+}

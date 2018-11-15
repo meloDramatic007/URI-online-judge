@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int wid,len,per,area,side;
+    while(cin>>wid && wid!=0)
+    {
+        cin>>len>>per;
+        area=(100*wid*len)/per;
+        side=sqrt(area);
+        cout<<side<<endl;
+    }
+    return 0;
+}

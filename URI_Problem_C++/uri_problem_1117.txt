@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double x,y;
+
+    while (true)
+    {
+          cin>>x;
+
+
+        if(x>=0 && x<=10)
+        {
+            while(true)
+            {cin>>y;
+        if(y>0 && y<=10)
+            {
+
+            cout<<"media = "<<(x+y)/2<<endl;
+
+            return 0;
+            }
+            else{cout<<"nota invalida"<<endl;}
+
+            }
+        }
+        else
+        {
+            cout<<"nota invalida"<<endl;
+        }
+
+
+
+
+    }
+
+}

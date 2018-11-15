@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int surviveTime(double food)
+{
+    int days=0;
+    while(food>1)
+    {
+
+        food/=2;
+        days++;
+
+    }
+    return days;
+}
+
+int main()
+{
+    int test;
+    double food;
+    cin>>test;
+    for(int i=0;i<test;i++)
+    {
+        cin>>food;
+        cout<<surviveTime(food)<<" dias"<<endl;
+    }
+    return 0;
+}

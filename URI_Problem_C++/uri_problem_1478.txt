@@ -1,0 +1,45 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    int n,i,j;
+
+    while(cin>>n && n!=0)
+    {
+        int m[n][n];
+        int first=0,p=1,q=0;
+        for(i=0;i<n;i++)
+        {
+            for(j=first;j<n;j++)
+            {
+                m[first][j]=p;
+                m[j][first]=p;
+                 p++;
+            if(p>n-q)
+            {
+                p=1;
+                q++;
+            }
+            }
+            first++;
+
+
+        }
+
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<n-1;j++)
+            {
+                cout<<right<<setw(3)<<setfill(' ')<<m[i][j]<<" ";
+            }
+            cout<<right<<setw(3)<<setfill(' ')<<m[i][j];
+            cout<<endl;
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+  int NUMBER,hour;
+  float m,SALARY;
+  cin>>NUMBER;
+  cin>>hour;
+  cin>>m;
+  SALARY=m*hour;
+  cout<<"NUMBER = "<<NUMBER<<endl;
+  cout<<std::fixed<<std::setprecision(2)<<"SALARY = U$ "<<SALARY<<endl;
+
+return 0;
+}

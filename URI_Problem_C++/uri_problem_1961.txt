@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int height,casenumber,number,sad=0,p,i,d=0,t=0;
+    cin>>height>>casenumber;
+    for(i=0;i<casenumber;i++)
+    {
+        cin>>number;
+        p=abs(number-sad);
+        sad=number;
+        d++;
+     if(d>1 && p>height)
+     {
+         t++;
+     }
+
+    }
+
+    if(t>=1)
+    {
+        cout<<"GAME OVER"<<endl;
+    }
+    else
+    {
+        cout<<"YOU WIN"<<endl;
+    }
+    return 0;
+}
